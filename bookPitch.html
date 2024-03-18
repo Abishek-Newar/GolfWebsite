@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidcup Family Golf</title>
+    <link rel="stylesheet" href="trialcss.css">
+    <link
+      rel="shortcut icon"
+      href="https://sidcupfamilygolf.com/wp-content/themes/puttosaurus/favicons/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body> 
+    <div id="nav">
+        <img src="https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/logo-white.svg" alt="">
+        <a href="index.html">Home</a>
+        <!-- <button class="open-button"  onclick="openForm()">Login</button>
+        <button class="log" id="log-out">Log-Out</button> -->
+    </div>
+    <section class="course">
+        
+        <div class="container">
+            <h1>BOOK PITCH</h1>
+            <form action="" id="bookPitch">
+                <div class="alert">YOUR PITCH IS BOOKED</div>
+                <div class="elem-group">
+                  <label for="name">Your Name</label>
+                  <input type="text" id="name" name="visitor_name" placeholder="Sanjiwan Mahat" pattern=[A-Z\sa-z]{3,20} required>
+                </div>
+                <div class="elem-group">
+                  <label for="email">Your E-mail</label>
+                  <input type="email" id="email" name="visitor_email" placeholder="sanjwan@email.com" required>
+                </div>
+                <div class="elem-group">
+                  <label for="phone">Your Phone</label>
+                  <input type="tel" id="phone" name="visitor_phone" placeholder="815-891-8623" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+                </div>
+                <hr>
+                <div class="elem-group">
+                  <label for="time-selection">Select Time Preference</label>
+                  <select id="time-selection" name="time_preference" required>
+                      <option value="">Choose a Time from the List</option>
+                      <option value="9am-12am">9am - 12am</option>
+                      <option value="1pm-4pm">1pm - 4pm</option>
+                      <option value="4pm-7pm">4pm -7pm</option>
+                  </select>
+                </div>
+                <button type="submit">Book</button>
+            </form>
+        </div>
+        <img id="colon1" src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/quote-left.svg" alt="">
+          <img id="colon2"   src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/quote-right.svg" alt="">
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="JS/bookPitch.js"></script>
+</body>
+</html>    
